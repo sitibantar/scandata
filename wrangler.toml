@@ -1,0 +1,14 @@
+name = "scandata"
+compatibility_date = "2024-03-20"
+compatibility_flags = [ "nodejs_compat" ]
+pages_build_output_dir = "./dist"
+
+# Binding Database D1 (Serverless SQLite)
+[[d1_databases]]
+binding = "DB"
+database_name = "scandata"
+database_id = "7fcf5766-a271-49f9-9180-636d6c67632a"
+
+# Deklarasi variabel environment (Secret key JWT diatur via dashboard Cloudflare)
+[vars]
+ENVIRONMENT = "production"
